@@ -12,7 +12,7 @@ A simplified Global Kinematic Model was utilized to predict the state of the veh
 
 Vehicle Position: (x,y)
 Vehicle Heading: (ψ)
-Velocity (v)
+Vehicle Speed: (v)
 
 Vehicle State example: [x, y, ψ, v]
 
@@ -41,9 +41,9 @@ The final two equations, cross track error (cte) and error psi (epsi), were used
 
 These values were initially chosen after watching Udacity's MPC Project Q&A webinar. The other values that were also tested are listed below. I noticed that as the timestep increased the vehicle moved more and more erratically. I believe this is primarily a hardware limitation due to my small laptop with 1GB of RAM and an Atom processor. If I had more RAM and a faster processor then I believe I could set a larger timestep which would also allow for a higher reference velocity.  
 
-* Additional Test parameters
-N = 8, 15, 18, 20, 25
-dt = 0.08, 0.15, 0.1, 0.2, 0.2
+### Additional Parameters Tested
+* N = 8, 15, 18, 20, 25
+* dt = 0.08, 0.15, 0.1, 0.2, 0.2
 
 ##  MPC Preprocessing / Polynomial Fitting / MPC with 100ms Latency
 
