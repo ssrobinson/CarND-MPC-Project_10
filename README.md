@@ -4,7 +4,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 ## Introduction
 
-The goal of this project is to develop/implement a Model Predictive Controller (MPC) in C++ that allows a virtual vehicle to be driven in a Unity simulation environment. This MPC utilizes the Global Kinematic Model as the framework to determine the state of the vehicle at all times. All model parameters were tuned manually by trial and error.
+The goal of this project is to develop/implement a Model Predictive Controller (MPC) in C++ that allows a virtual vehicle to be driven autonomously in a Unity simulation environment. This MPC utilizes the Global Kinematic Model as the framework to determine the state of the vehicle at all times. All model parameters were tuned manually by trial and error.
 
 ## The Model
 
