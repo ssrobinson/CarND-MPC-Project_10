@@ -10,9 +10,9 @@ The goal of this project is to develop/implement a Model Predictive Controller (
 
 A simplified Global Kinematic Model was utilized to predict the state of the vehicle.
 
-Vehicle Position: (x,y)
-Vehicle Heading: (ψ)
-Vehicle Speed: (v)
+* Vehicle Position: (x,y)
+* Vehicle Heading: (ψ)
+* Vehicle Speed: (v)
 
 Vehicle State example: [x, y, ψ, v]
 
@@ -56,14 +56,14 @@ The cost function reference and weight parameters were tuned using trial and err
 ```cpp
 REF_CTE 0.0
 REF_EPSI 0.0
-REF_V 35.0 // mph
+REF_V 20.0 // m/s
 
 CTE_WEIGHT 2.0
 EPSI_WEIGHT 20.0
 V_WEIGHT 1.0
-DELTA_WEIGHT 1.0e5
+DELTA_WEIGHT 1.0
 A_WEIGHT 21.0
-DDELTA_WEIGHT 0.0
+DDELTA_WEIGHT 100.0
 DA_WEIGHT 0.0
 ```
 ---
